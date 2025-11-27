@@ -24,7 +24,9 @@ setEditeid(null)
  const createNote = (values) => {
   if (editeid) {  
     
-   
+    console.log(values);
+    values.new Date()
+    updateNote(editeid,values)  
   } else { 
     const newNote = {
       ...values,
